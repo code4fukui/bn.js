@@ -1,8 +1,8 @@
 /* global describe, it */
 
-var assert = require('assert').strict;
-var BN = require('../').BN;
-var fixtures = require('./fixtures');
+import { assert, describe, it } from "./describe.js";
+import { BN } from "../lib/bn.js";
+import * as fixtures from "./fixtures.js";
 
 describe('BN.js/Arithmetic', function () {
   describe('.add()', function () {

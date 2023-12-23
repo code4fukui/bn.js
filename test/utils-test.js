@@ -1,7 +1,8 @@
 /* global describe, it */
 
-var assert = require('assert').strict;
-var BN = require('../').BN;
+import { assert, describe, it } from "./describe.js";
+import { BN } from "../lib/bn.js";
+import { Buffer } from "https://taisukef.github.io/buffer/Buffer.js";
 
 describe('BN.js/Utils', function () {
   describe('.toString()', function () {

@@ -1,4 +1,4 @@
-exports.dhGroups = {
+export const dhGroups = {
   p16: {
     prime: 'ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd1' +
       '29024e088a67cc74020bbea63b139b22514a08798e3404dd' +

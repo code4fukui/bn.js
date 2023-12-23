@@ -1,8 +1,9 @@
 /* global describe, it */
 
-var assert = require('assert').strict;
-var BN = require('../../').BN;
-var fixtures = require('../fixtures');
+import { assert, describe, it } from "../describe.js";
+import { BN } from "../../lib/bn.js";
+import * as fixtures from "../fixtures.js";
+import { Buffer } from "https://taisukef.github.io/buffer/Buffer.js";
 
 describe('BN.js/Slow DH test', function () {
   var groups = fixtures.dhGroups;
@@ -10,7 +11,7 @@ describe('BN.js/Slow DH test', function () {
     it('should match public key for ' + name + ' group', function () {
       var group = groups[name];
 
-      this.timeout(3600 * 1000);
+      //this.timeout(3600 * 1000);
 
       var base = new BN(2);
       var mont = BN.red(new BN(group.prime, 16));

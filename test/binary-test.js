@@ -1,7 +1,7 @@
 /* global describe, it */
 
-var assert = require('assert').strict;
-var BN = require('../').BN;
+import { assert, describe, it } from "./describe.js";
+import { BN } from "../lib/bn.js";
 
 describe('BN.js/Binary', function () {
   describe('.shl()', function () {
