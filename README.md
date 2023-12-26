@@ -10,7 +10,7 @@
 ## Usage
 
 ```js
-import * as BN from "https://code4fukui.github.io/bn.js/lib/bn.js";
+import { BN } from "https://code4fukui.github.io/bn.js/lib/bn.js";
 
 var a = new BN('dead', 16);
 var b = new BN('101010', 2);
